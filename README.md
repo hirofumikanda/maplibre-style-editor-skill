@@ -16,8 +16,9 @@ MapLibre GL JS の `style.json` を [MapLibre Style Specification](https://mapli
 **特徴：**
 
 - 変更内容に応じて公式 Spec ページを参照し、プロパティ名・型・有効範囲を確認してから編集します
-- `layout` / `paint` の区別、`enum` の有効値、排他制約など、よくある間違いを防止します
-- 編集後に `validate-style.js`で `style.json` のバリデーションが可能です
+- `layout` / `paint` の区別、`enum` の有効値、排他制約など、よくある間違いを防止します（[CAUTIONS.md](skills/maplibre-style-editor/references/CAUTIONS.md) 参照）
+- 表現式やプロパティ記法の推奨パターンをまとめた [BEST_PRACTICES.md](skills/maplibre-style-editor/references/BEST_PRACTICES.md) を活用します
+- 編集後に `validate-style.js` で `style.json` のバリデーションが可能です
 
 **使い方の例：**
 
@@ -34,6 +35,9 @@ circleレイヤーを新しく追加して
 └── skills/
     └── maplibre-style-editor/
         ├── SKILL.md                  # スキル定義ファイル
+        ├── references/
+        │   ├── BEST_PRACTICES.md     # 表現式・プロパティ記法の推奨パターン
+        │   └── CAUTIONS.md           # よくある間違いと注意事項
         └── scripts/
             └── validate-style.js     # style.json バリデーションスクリプト
 ```
